@@ -24,4 +24,10 @@ let ladder = {
 // ladder.down();
 // ladder.showStep(); // 0
 
-ladder.up().up().down().showStep().down().showStep(); // shows 1, then 0
+ladder
+    .up()
+    .up()
+    .down()
+    .showStep()
+    .down()
+    .showStep(); // shows 1, then 0
