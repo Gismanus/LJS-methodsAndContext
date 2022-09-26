@@ -1,10 +1,12 @@
-function makeUser(){
-    return {
-        name: 'John',
-        ref: this,
-    };
+function A(){
+    this.isAdmin = 'noAdmin';
 }
 
-let user = makeUser();
+function B(){
+    this.isAdmin = 'noAdmin';
+}
 
-console.log(user.ref.name); // undefined
+let a = new A;
+let b = new B;
+
+console.log(a === b);
